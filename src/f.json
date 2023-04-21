@@ -1,0 +1,15 @@
+{
+    "Id": "Policy1681886584637",
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "Stmt1681886583049",
+        "Action": [
+          "s3:GetObject"
+        ],
+        "Effect": "Allow",
+        "Resource": "arn:aws:s3:::newbucketprince/*",
+        "Principal": "*"
+      }
+    ]
+  }
