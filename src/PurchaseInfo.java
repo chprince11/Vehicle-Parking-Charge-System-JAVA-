@@ -19,6 +19,6 @@ public class PurchaseInfo
     public String toStringRep()
     {
         count++;
-        return(count+") Entry"+"\nName: " + customerName + "    Total Hours:" + totalHours + "\nTax: " + tax+"%" + "    Total Amount: " + "$"+mainScreen.format.format(totalAmount));
+        return(count+") Entry"+"\nName: " + customerName + "    Total Hours:" + totalHours + "\nTax: " + tax+"%" + "    Total Amount: " + "$"+MainScreenController.format.format(totalAmount));
     }
 }

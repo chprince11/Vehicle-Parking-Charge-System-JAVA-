@@ -76,8 +76,7 @@ public class printBill
     
     public void onPrintReceipt() throws IOException 
     {
-        MainScreenController mainScreen = new MainScreenController();
-            File file = new File("printBill.txt");
+        File file = new File("printBill.txt");
             PrintWriter printWriter = new PrintWriter(new BufferedWriter(new FileWriter(file,true)));
             printWriter.write("");
             count++;
@@ -90,7 +89,7 @@ public class printBill
             printWriter.println("**********************************");
             printWriter.println("User Membership: "+getMemberShip());
             printWriter.println("Tax: "+getTax());
-            printWriter.println("Total Bill: $"+(mainScreen.format.format(getTotal())));
+            printWriter.println("Total Bill: $"+(MainScreenController.format.format(getTotal())));
             printWriter.println("------Thank You For Using VPCS------");
             printWriter.println("----------------------------------------------");
             printWriter.close();
